@@ -12,3 +12,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# Código roda teste sem erros corretamente
+# Código não encontra falta de : no TESTE_SEM_ERRO.POR

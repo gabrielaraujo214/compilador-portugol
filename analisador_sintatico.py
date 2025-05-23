@@ -21,8 +21,8 @@ class Parser:
 
     def declaracao(self):
         self.consumir('TIPO')
+        self.consumir(':')
         self.consumir('ID')
-        self.consumir(';')
 
     def comando(self):
         if self.token_atual() == 'ID':
@@ -42,14 +42,12 @@ class Parser:
         self.consumir('ID')
         self.consumir('ATR')
         self.expressao()
-        self.consumir(';')
 
     def leia(self):
         self.consumir('LEIA')
         self.consumir('PARAB')
         self.consumir('ID')
         self.consumir('PARFE')
-        self.consumir(';')
 
     def escreva(self):
         self.consumir('ESCREVA')
@@ -59,7 +57,6 @@ class Parser:
         else:
             raise SyntaxError("Erro em escreva: argumento inválido")
         self.consumir('PARFE')
-        self.consumir(';')
 
     def se(self):
         self.consumir('SE')
