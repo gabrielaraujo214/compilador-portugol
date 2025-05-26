@@ -21,7 +21,7 @@ class Parser:
 
     def declaracao(self):
         self.consumir('TIPO')
-        self.consumir(':')
+        self.consumir('DOIS_PONTOS')
         self.consumir('ID')
 
     def comando(self):

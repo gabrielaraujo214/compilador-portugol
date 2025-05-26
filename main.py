@@ -3,7 +3,7 @@ from analisador_semantico import AnalisadorSemantico
 
 def main():
     try:
-        tokens = executar_lexico('exemplo.POR', 'saida.TEM')
+        tokens = executar_lexico('TESTE_COM_ERRO.POR', 'saida.TEM')
         analisador = AnalisadorSemantico(tokens)
         analisador.programa()
         print("Compilação concluída com sucesso.")
@@ -12,6 +12,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# Código roda teste sem erros corretamente
-# Código não encontra falta de : no TESTE_SEM_ERRO.POR

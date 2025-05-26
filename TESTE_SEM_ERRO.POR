@@ -1,5 +1,5 @@
-inteiro idade
-inteiro soma
+inteiro:idade
+inteiro:soma
 idade <- 10
 soma <- idade + 5
 escreva("Idade:")

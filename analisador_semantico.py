@@ -7,6 +7,7 @@ class AnalisadorSemantico(Parser):
 
     def declaracao(self):
         self.consumir('TIPO')
+        self.consumir('DOIS_PONTOS')
         nome_var = self.tokens[self.pos][1]
         if nome_var in self.variaveis_declaradas:
             raise RuntimeError(f"Variável '{nome_var}' já declarada.")
